@@ -78,7 +78,9 @@ function handleServerResponse() {
                 </tr>
                
             </table> 
-            <input type="button" value="Submit" onclick="javascript:ajaxFunction();" /><br>
+            <input type="button" value="Submit" onclick="javascript:ajaxFunction();" />
+            <input type="button" value="Info" onclick="window.location.href='http://kostasa89.wordpress.com/2011/12/14/project-3/'"/>
+            <input type="button" value="Code" onclick="window.location.href='http://www.box.com/s/ta4dxaei074gehobyr9b'"/>
         </form>
          
         
