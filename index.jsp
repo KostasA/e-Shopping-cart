@@ -56,25 +56,25 @@ function handleServerResponse() {
                     <td>Cafe</td>
                     <td>18.50</td>
                     <td><input type="text" name="cafequa" value="0.0"></td>
-                    <td><input type="text" name="cafeprice" value="${cookie.cafequa.value}"></td>
+                    <td><input type="text" name="cafeprice" value="0.0"></td>
                 </tr>
                 <tr>
                     <td>Sugar</td>
                     <td>6.95</td>
                     <td><input type="text" name="sugarqua" value="0.0"></td>
-                    <td><input type="text" name="sugarprice" value="${cookie.sugarqua.value}" ></td>
+                    <td><input type="text" name="sugarprice" value="0.0" ></td>
                 </tr>
                 <tr>
                     <td>Water</td>
                     <td>1.29</td>
                     <td><input type="text" name="waterqua" value="0.0"></td>
-                    <td><input type="text" name="waterprice" value="${cookie.waterqua.value}"></td>
+                    <td><input type="text" name="waterprice" value="0.0"></td>
                 </tr>
-                <tr>
+               <tr>
                     <td><b>Total</b></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" name="totalprice" ></td>
+                    <td bgcolor="#3399FF"><input type="text" name="totalprice" value="0.0" ></td>
                 </tr>
                
             </table> 
