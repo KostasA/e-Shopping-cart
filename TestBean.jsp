@@ -33,3 +33,36 @@
         
     </body>
 </html>
+
+
+<!-- apo edw kai katw o kwdikas einai me scriptlet gia thn dimiourgia twn cookies
+     giati den vrika tropo na ta dimiourghsw mono me EL -->
+       <%
+                    String cafeprice = application.getInitParameter("cafeprice");
+                    Double cafepricedouble = Double.parseDouble(cafeprice);
+                    String totalcafeprice = Double.toString(cafe.getCafequa()*cafepricedouble);
+                    Cookie cafepricecookie = new Cookie("cafeprice",totalcafeprice);
+                    cafepricecookie.setMaxAge(60*60*60*60);
+                    response.addCookie(cafepricecookie);
+                    
+                    String sugarprice = application.getInitParameter("sugarprice");
+                    Double sugarpricedouble = Double.parseDouble(sugarprice);
+                    String totalsugarprice = Double.toString(sugar.getSugarqua()*sugarpricedouble);
+                    Cookie sugarpricecookie = new Cookie("sugarprice",totalsugarprice);
+                    sugarpricecookie.setMaxAge(60*60*60*60);
+                    response.addCookie(sugarpricecookie);
+                    
+                    String waterprice = application.getInitParameter("waterprice");
+                    Double waterpricedouble = Double.parseDouble(waterprice);
+                    String totalwaterprice = Double.toString(water.getWaterqua()*waterpricedouble);
+                    Cookie waterpricecookie = new Cookie("waterprice",totalwaterprice);
+                    waterpricecookie.setMaxAge(60*60*60*60);
+                    response.addCookie(waterpricecookie);
+                    
+                    double total;
+                    total = cafe.getCafequa()*cafepricedouble + sugar.getSugarqua()*sugarpricedouble + water.getWaterqua()*waterpricedouble;
+                    String totalprice = Double.toString(total);
+                    Cookie totalpricecookie = new Cookie("totalprice",totalprice);
+                    totalpricecookie.setMaxAge(60*60*60*60);
+                    response.addCookie(totalpricecookie);
+        %>
